@@ -1,0 +1,270 @@
+.todo-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff, #f8f9fb);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.todo-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #7c3aed;
+  margin-bottom: 0.25rem;
+}
+
+.todo-subtitle {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.todo-input-box {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  gap: 0.75rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #c4b5fd;
+  box-shadow: 0 0 0 2px #ddd6fe;
+}
+
+.todo-add-btn {
+  background-color: #c084fc;
+  border: none;
+  padding: 0 1.5rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.todo-add-btn:hover {
+  background-color: #a855f7;
+}
+
+.todo-stats {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.todo-pill {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+}
+
+.todo-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-filter-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #374151;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.2s ease;
+}
+
+.todo-filter-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.todo-filter-btn.active {
+  background-color: #c084fc;
+  color: white;
+  border-color: #a855f7;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.todo-text {
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.todo-delete {
+  color: #ef4444;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.todo-empty {
+  background: white;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.todo-empty-icon {
+  font-size: 3rem;
+  color: #d1d5db;
+  margin-bottom: 0.75rem;
+}
+
+.todo-empty-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #4b5563;
+}
+
+.todo-empty-desc {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+
+.todo-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.todo-checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #7c3aed;
+  cursor: pointer;
+}
+
+
+
+.todo-date-picker {
+  display: flex;
+  align-items: right;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.todo-date-label {
+  font-weight: 500;
+}
+
+
+
+
+.todo-header-row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.todo-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #eee;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.todo-filter-btn.active {
+  background-color: #7c3aed;
+  color: white;
+}
+
+
+
+.top-right-logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.logout-button {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #e5e7eb;
+}
+
+.logout-link {
+  color: #7c3aed;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.logout-link:hover {
+  text-decoration: underline;
+}
